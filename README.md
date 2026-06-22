@@ -25,28 +25,34 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] Describe the game's purpose.
+- [x] Detail which bugs you found.
+- [x] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess
+2. The hint should correctly say too low or too high
+3. User add a guess that is closer to the goal
+4. User gets the guess right
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
-
+![alt text](image.png)
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+# python3 -m pytest tests/test_game_logic.py 
+============================================================= test session starts ==============================================================
+platform darwin -- Python 3.13.9, pytest-9.0.3, pluggy-1.6.0
+rootdir: /Users/dangaston/Desktop/ProjectHub/ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.13.0
+collected 4 items                                                                                                                              
+
+tests/test_game_logic.py ....                                                                                                            [100%]
+
+============================================================== 4 passed in 0.01s ========================================================
 ```
 
 ## 🚀 Stretch Features
